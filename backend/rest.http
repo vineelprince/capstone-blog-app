@@ -10,17 +10,6 @@ Content-Type: application/json
   "profileImageUrl": "http://example.com/avatar/user.png"
 }
 
-### USER REGISTRATION (SECOND USER)
-POST http://localhost:4000/user-api/users
-Content-Type: application/json
-
-{
-  "firstName": "purushotham",
-  "lastName": "reddy",
-  "email": "SPR@email.com",
-  "password": "user@123",
-  "profileImageUrl": "http://example.com/avatar/user.png"
-}
 
 ### USER AUTHENTICATION (LOGIN)
 POST http://localhost:4000/user-api/authenticate
