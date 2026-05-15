@@ -15,8 +15,11 @@ config(); //process.env
 const app = exp();
 //use cors middleware
 app.use(cors({
-  origin: 
-    "http://localhost:5173",
+ origin: [
+  "http://localhost:5173",
+  "http://localhost:3000",
+  "https://full-stack-blog-app-vz3g.vercel.app"
+],
   credentials: true
 }));
 
