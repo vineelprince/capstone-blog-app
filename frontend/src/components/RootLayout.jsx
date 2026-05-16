@@ -5,18 +5,24 @@ import { useEffect } from "react";
 import { useAuth } from "../store/AuthStore";
 
 function RootLayout() {
+
   const checkAuth = useAuth((state) => state.checkAuth);
 
   useEffect(() => {
     checkAuth();
   }, []);
+
   return (
-    <div>
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-gray-50 to-indigo-50">
+
       <Header />
-      <div className="min-h-screen mx-4 sm:mx-36">
+
+      <main className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-10 py-8">
         <Outlet />
-      </div>
+      </main>
+
       <Footer />
+
     </div>
   );
 }

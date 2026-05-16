@@ -1,161 +1,166 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-import { useNavigate } from "react-router";
-import { BASE_URL } from "../config/apiConfig";
+import { motion } from "framer-motion";
+import {
+  FiEdit3,
+  FiUsers,
+  FiTrendingUp,
+  FiArrowRight,
+} from "react-icons/fi";
 
 function Home() {
-  const [articles, setArticles] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    const fetchArticles = async () => {
-      try {
-        const res = await axios.get(
-          `${BASE_URL}/user-api/articles`,
-          {
-            withCredentials: true,
-          }
-        );
-
-        setArticles(res.data.payload || []);
-      } catch (err) {
-        console.log("Failed to fetch articles", err);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchArticles();
-  }, []);
-
-  const openArticle = (article) => {
-    navigate(`/article/${article._id}`, {
-      state: article,
-    });
-  };
-
   return (
-    <div className="bg-gray-50 text-gray-800">
+    <div className="space-y-20">
 
       {/* HERO SECTION */}
-      <div className="py-28 px-6 text-center">
-        <h1 className="text-5xl sm:text-6xl font-bold mb-6 leading-tight text-gray-900">
-          Write freely. Share openly.
-        </h1>
+      <section className="relative overflow-hidden rounded-[36px] bg-white border border-slate-200 shadow-sm px-8 lg:px-20 py-24">
 
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
-          A simple and powerful platform to publish your ideas and connect with readers.
-        </p>
+        {/* subtle background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-indigo-50 opacity-80" />
 
-        <div className="flex justify-center gap-4">
-          <button
-            onClick={() => navigate("/author-profile/write-article")}
-            className="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 active:scale-95 transition"
+        <div className="relative z-10 text-center max-w-5xl mx-auto">
+
+          <motion.div
+            initial={{ opacity: 0, y: 25 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
           >
-            Start Writing
-          </button>
 
-          <button
-            onClick={() => navigate("/user-profile")}
-            className="border border-gray-300 px-6 py-3 rounded-lg hover:bg-gray-100 transition"
-          >
-            Explore Blogs
-          </button>
+            <span className="inline-flex items-center gap-2 bg-indigo-50 text-indigo-700 border border-indigo-100 px-5 py-2 rounded-full text-sm font-medium mb-8">
+              🚀 Modern Publishing Platform
+            </span>
+
+            <h1 className="text-5xl lg:text-7xl font-black tracking-tight text-slate-900 leading-tight">
+
+              Write freely.
+              <br />
+
+              <span className="text-slate-700">
+                Share openly.
+              </span>
+
+            </h1>
+
+            <p className="text-slate-500 text-lg leading-relaxed mt-8 max-w-3xl mx-auto">
+              A clean and professional platform built for creators,
+              writers, and publishers who want to share ideas
+              beautifully and grow their audience.
+            </p>
+
+            {/* BUTTONS */}
+            <div className="flex flex-wrap justify-center gap-5 mt-12">
+
+              <button
+                onClick={() => window.location.href = "/login"}
+                className="bg-slate-900 text-white px-8 py-4 rounded-2xl font-semibold hover:-translate-y-1 hover:bg-slate-800 transition-all duration-300 shadow-lg flex items-center gap-2"
+              >
+                Start Writing
+                <FiArrowRight />
+              </button>
+
+              <button
+                onClick={() => window.location.href = "/articles"}
+                className="border border-slate-300 bg-white text-slate-700 px-8 py-4 rounded-2xl font-semibold hover:bg-slate-50 hover:-translate-y-1 transition-all duration-300"
+              >
+                Explore Blogs
+              </button>
+
+            </div>
+
+          </motion.div>
+
         </div>
-      </div>
+
+      </section>
 
       {/* FEATURES */}
-      <div className="grid md:grid-cols-3 gap-6 px-6 sm:px-20 mb-20">
-        <div className="bg-white border rounded-xl p-8 hover:shadow-md transition duration-200">
-          <h3 className="text-xl font-semibold mb-3">Simple Editor</h3>
-          <p className="text-gray-600">
-            Focus on writing without distractions.
+      <section>
+
+        {/* HEADING */}
+        <div className="text-center mb-16">
+
+          <h2 className="text-4xl lg:text-5xl font-black text-slate-900">
+            Why Choose InkFlow?
+          </h2>
+
+          <p className="text-slate-500 text-lg mt-5 max-w-2xl mx-auto">
+            Everything you need to publish content professionally
+            and build your digital presence.
           </p>
+
         </div>
 
-        <div className="bg-white border rounded-xl p-8 hover:shadow-md transition duration-200">
-          <h3 className="text-xl font-semibold mb-3">Community</h3>
-          <p className="text-gray-600">
-            Discover and follow great authors.
-          </p>
+        {/* CARDS */}
+        <div className="grid md:grid-cols-3 gap-8">
+
+          {/* CARD 1 */}
+          <motion.div
+            whileHover={{ y: -6 }}
+            transition={{ duration: 0.25 }}
+            className="bg-white rounded-[28px] border border-slate-200 p-10 shadow-sm hover:shadow-xl transition-all duration-300"
+          >
+
+            <div className="w-16 h-16 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-3xl mb-8">
+              <FiEdit3 />
+            </div>
+
+            <h3 className="text-2xl font-bold text-slate-900 mb-4">
+              Simple Editor
+            </h3>
+
+            <p className="text-slate-600 leading-relaxed">
+              Focus on writing without distractions using
+              a clean and modern editor experience.
+            </p>
+
+          </motion.div>
+
+          {/* CARD 2 */}
+          <motion.div
+            whileHover={{ y: -6 }}
+            transition={{ duration: 0.25 }}
+            className="bg-white rounded-[28px] border border-slate-200 p-10 shadow-sm hover:shadow-xl transition-all duration-300"
+          >
+
+            <div className="w-16 h-16 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-3xl mb-8">
+              <FiUsers />
+            </div>
+
+            <h3 className="text-2xl font-bold text-slate-900 mb-4">
+              Community
+            </h3>
+
+            <p className="text-slate-600 leading-relaxed">
+              Discover writers, connect with readers,
+              and grow through a strong creator network.
+            </p>
+
+          </motion.div>
+
+          {/* CARD 3 */}
+          <motion.div
+            whileHover={{ y: -6 }}
+            transition={{ duration: 0.25 }}
+            className="bg-white rounded-[28px] border border-slate-200 p-10 shadow-sm hover:shadow-xl transition-all duration-300"
+          >
+
+            <div className="w-16 h-16 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center text-3xl mb-8">
+              <FiTrendingUp />
+            </div>
+
+            <h3 className="text-2xl font-bold text-slate-900 mb-4">
+              Growth
+            </h3>
+
+            <p className="text-slate-600 leading-relaxed">
+              Build your presence consistently with
+              analytics, engagement, and publishing tools.
+            </p>
+
+          </motion.div>
+
         </div>
 
-        <div className="bg-white border rounded-xl p-8 hover:shadow-md transition duration-200">
-          <h3 className="text-xl font-semibold mb-3">Growth</h3>
-          <p className="text-gray-600">
-            Build your presence with consistent writing.
-          </p>
-        </div>
-      </div>
+      </section>
 
-      {/* LATEST ARTICLES */}
-      <div className="px-6 sm:px-20 pb-20">
-        <h2 className="text-3xl font-bold mb-10 text-gray-900">
-          Latest Articles
-        </h2>
-
-        {loading ? (
-          <p className="text-gray-500">Loading articles...</p>
-        ) : articles.length === 0 ? (
-          <p className="text-gray-500">No articles published yet.</p>
-        ) : (
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {articles.slice(0, 6).map((article) => (
-              <div
-                key={article._id}
-                onClick={() => openArticle(article)}
-                className="bg-white border rounded-2xl p-6 cursor-pointer hover:shadow-lg hover:-translate-y-1 transition duration-200"
-              >
-                {/* Category */}
-                <p className="text-xs uppercase tracking-wide text-gray-500 mb-3">
-                  {article.category}
-                </p>
-
-                {/* Title */}
-                <h3 className="text-2xl font-semibold mb-4 text-gray-900 line-clamp-2">
-                  {article.title}
-                </h3>
-
-                {/* Content */}
-                <p className="text-gray-600 text-sm leading-6 mb-6 line-clamp-4">
-                  {article.content}
-                </p>
-
-                {/* Footer */}
-                <div className="flex justify-between items-center text-sm text-gray-500 border-t pt-4">
-                  <span>
-                    {article.author?.firstName || "Author"}
-                  </span>
-
-                  <span>
-                    {new Date(article.createdAt).toLocaleDateString()}
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
-      </div>
-
-      {/* CTA SECTION */}
-      <div className="bg-black text-white py-20 text-center px-6">
-        <h2 className="text-4xl font-bold mb-4">
-          Start sharing your ideas today.
-        </h2>
-
-        <p className="text-gray-300 mb-8 max-w-xl mx-auto">
-          Create articles, grow your audience, and become part of a thriving writing community.
-        </p>
-
-        <button
-          onClick={() => navigate("/register")}
-          className="bg-white text-black px-8 py-3 rounded-lg font-medium hover:bg-gray-200 transition"
-        >
-          Create Account
-        </button>
-      </div>
     </div>
   );
 }

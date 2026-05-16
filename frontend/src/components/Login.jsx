@@ -42,6 +42,10 @@ function Login() {
       if (currentUser.role === "AUTHOR") {
         navigate("/author-profile");
       }
+      if (currentUser.role === "ADMIN") {
+        toast.success("Admin login successful");
+        navigate("/admin-profile");
+      }
     }
   }, [isAuthenticated, currentUser]);
 

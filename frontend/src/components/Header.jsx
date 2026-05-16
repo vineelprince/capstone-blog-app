@@ -1,5 +1,7 @@
 import { NavLink, useNavigate } from "react-router";
 import { useAuth } from "../store/AuthStore";
+import { FiLogOut } from "react-icons/fi";
+import logo from "../assets/logo.png";
 
 function Header() {
   const isAuthenticated = useAuth((state) => state.isAuthenticated);
@@ -13,7 +15,6 @@ function Header() {
     navigate("/login");
   };
 
-  // profile route based on role
   const getProfilePath = () => {
     if (!user) return "/";
 
@@ -30,96 +31,143 @@ function Header() {
   };
 
   return (
-    <header className="w-full border-b bg-white sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur-lg shadow-sm">
 
-        {/* LOGO */}
-        <div
-          onClick={() => navigate("/")}
-          className="text-2xl font-bold tracking-tight cursor-pointer text-gray-900"
-        >
-          InkFlow
-        </div>
+      <div className="max-w-[1600px] mx-auto px-6 lg:px-10">
 
-        {/* NAVIGATION */}
-        <div className="flex items-center gap-6">
+        <div className="h-20 flex items-center justify-between">
 
-          <NavLink
-            to="/"
-            className="text-sm font-medium text-gray-600 hover:text-black transition"
+          {/* LEFT */}
+          <div
+            onClick={() => navigate("/")}
+            className="flex items-center gap-4 cursor-pointer"
           >
-            Home
-          </NavLink>
 
-          {isAuthenticated && (
-            <NavLink
-              to={getProfilePath()}
-              className="text-sm font-medium text-gray-600 hover:text-black transition"
-            >
-              Dashboard
-            </NavLink>
-          )}
-
-          {/* USER INFO */}
-          {isAuthenticated && user && (
-            <div
-              onClick={() => navigate(getProfilePath())}
-              className="flex items-center gap-3 bg-gray-100 px-3 py-2 rounded-full cursor-pointer hover:bg-gray-200 transition"
-            >
-
-              {/* PROFILE IMAGE */}
-              {user.profileImageUrl ? (
-                <img
-                  src={user.profileImageUrl}
-                  alt="profile"
-                  className="w-9 h-9 rounded-full object-cover border"
-                />
-              ) : (
-                <div className="w-9 h-9 rounded-full bg-black text-white flex items-center justify-center text-sm font-semibold">
-                  {user.firstName?.charAt(0)?.toUpperCase()}
-                </div>
-              )}
-
-              {/* USER NAME */}
-              <div className="hidden sm:flex flex-col leading-tight">
-                <span className="text-xs text-gray-500">
-                  Hi,
-                </span>
-
-                <span className="text-sm font-semibold text-gray-800">
-                  {user.firstName}
-                </span>
-              </div>
+            <div className="w-14 h-14 rounded-2xl overflow-hidden bg-white shadow-md border border-slate-200">
+              <img
+                src={logo}
+                alt="InkFlow Logo"
+                className="w-full h-full object-cover"
+              />
             </div>
-          )}
 
-          {/* AUTH BUTTONS */}
-          {!isAuthenticated ? (
-            <>
-              <NavLink
-                to="/login"
-                className="text-sm font-medium text-gray-600 hover:text-black transition"
-              >
-                Login
-              </NavLink>
+            <div>
+              <h1 className="text-3xl font-bold tracking-tight text-slate-900">
+                InkFlow
+              </h1>
 
-              <NavLink
-                to="/register"
-                className="bg-black text-white px-5 py-2 rounded-lg text-sm hover:bg-gray-800 transition"
-              >
-                Get Started
-              </NavLink>
-            </>
-          ) : (
-            <button
-              onClick={handleLogout}
-              className="text-sm font-medium text-red-500 hover:text-red-600 transition"
+              <p className="text-sm text-slate-500 -mt-1">
+                Write • Publish • Inspire
+              </p>
+            </div>
+
+          </div>
+
+          {/* RIGHT */}
+          <div className="flex items-center gap-4">
+
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                `px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 ${
+                  isActive
+                    ? "bg-slate-900 text-white shadow-md"
+                    : "text-slate-600 hover:bg-slate-100"
+                }`
+              }
             >
-              Logout
-            </button>
-          )}
+              Home
+            </NavLink>
+
+            {isAuthenticated && (
+              <NavLink
+                to={getProfilePath()}
+                className={({ isActive }) =>
+                  `px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 ${
+                    isActive
+                      ? "bg-gradient-to-r from-indigo-600 to-violet-600 text-white shadow-md"
+                      : "text-slate-600 hover:bg-slate-100"
+                  }`
+                }
+              >
+                Dashboard
+              </NavLink>
+            )}
+
+            {/* PROFILE */}
+            {isAuthenticated && user && (
+
+              <div
+                onClick={() => navigate(getProfilePath())}
+                className="flex items-center gap-3 bg-gradient-to-r from-slate-50 to-slate-100 border border-slate-200 rounded-2xl px-4 py-2 cursor-pointer shadow-sm hover:shadow-md transition-all duration-300"
+              >
+
+                {user.profileImageUrl ? (
+                  <img
+                    src={user.profileImageUrl}
+                    alt="profile"
+                    className="w-11 h-11 rounded-xl object-cover border"
+                  />
+                ) : (
+                  <div className="w-11 h-11 rounded-xl bg-slate-900 text-white flex items-center justify-center font-semibold">
+                    {user.firstName?.charAt(0)}
+                  </div>
+                )}
+
+                <div className="hidden sm:flex flex-col leading-tight">
+
+                  <span className="text-xs text-slate-400">
+                    Logged in as
+                  </span>
+
+                  <span className="text-sm font-semibold text-slate-800">
+                    {user.firstName}
+                  </span>
+
+                  <span className="text-xs uppercase tracking-wide text-indigo-600 font-bold">
+                    {user.role}
+                  </span>
+
+                </div>
+
+              </div>
+            )}
+
+            {/* LOGIN / LOGOUT */}
+            {!isAuthenticated ? (
+              <div className="flex items-center gap-3">
+
+                <NavLink
+                  to="/login"
+                  className="text-sm font-semibold text-slate-600 hover:text-black transition"
+                >
+                  Login
+                </NavLink>
+
+                <NavLink
+                  to="/register"
+                  className="bg-gradient-to-r from-slate-900 to-slate-700 text-white px-5 py-2.5 rounded-xl text-sm font-semibold shadow-md hover:scale-105 transition-all duration-300"
+                >
+                  Get Started
+                </NavLink>
+
+              </div>
+            ) : (
+              <button
+                onClick={handleLogout}
+                className="flex items-center gap-2 px-4 py-2 rounded-xl text-red-500 hover:bg-red-50 transition-all duration-300 font-semibold"
+              >
+                <FiLogOut />
+                Logout
+              </button>
+            )}
+
+          </div>
+
         </div>
+
       </div>
+
     </header>
   );
 }
