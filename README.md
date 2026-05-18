@@ -314,19 +314,6 @@ This project helped strengthen knowledge in:
 ✔️ Team Collaboration  
 ✔️ Real-World Development Workflow
 
----
-
-## 👨‍💻 My Contribution
-
-**Primary Focus:** Backend Development & API Integration
-
-### Responsibilities
-- Developed REST APIs for all core features
-- Implemented JWT-based authentication system
-- Integrated MongoDB database and data models
-- Built middleware for security and file uploads
-- Managed frontend-backend API integration
-- Configured server deployment
 
 ---
 
@@ -334,7 +321,6 @@ This project helped strengthen knowledge in:
 
 - **SUNTEK ATP Program** for the opportunity
 - **Mentors & Reviewers** for guidance and feedback
-- **Project Team Members** for collaboration
 - **Open Source Community** for amazing libraries and tools
 
 ---
@@ -344,9 +330,6 @@ This project helped strengthen knowledge in:
 **Vineel Krishna**
 
 - 🎓 B.Tech Information Technology Student
-- 🚀 Full Stack MERN Developer
-- 🏛️ President — Python Club, Anurag University
-- 💡 MSME Funded Project Developer
 
 GitHub: [@vineelprince](https://github.com/vineelprince)
 
