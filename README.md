@@ -1,10 +1,14 @@
-🚀 InkFlow — Full Stack MERN Blogging Platform
-
-A modern, scalable, and responsive blogging platform built with the MERN Stack, focused on seamless content creation, secure authentication, and a clean user experience.
-
-🌐 Live Demo: BlogSphere Live Website
-
 <div align="center">
+
+# 🚀 InkFlow — Full Stack MERN Blogging Platform
+
+A modern, responsive, and scalable blogging platform built with the **MERN Stack** (MongoDB, Express, React, Node.js).
+
+**Capstone Project under SUNTEK ATP Program**
+
+[Live Demo](#) | [GitHub Repository](#) | [API Documentation](#)
+
+</div>
 
 
 
@@ -18,226 +22,352 @@ A modern, scalable, and responsive blogging platform built with the MERN Stack, 
 
 
 </div>
-✨ Project Overview
+---
 
-BlogSphere is a full-stack blogging application developed as a Capstone Project under the SUNTEK ATP Program.
+## 📌 Project Overview
 
-The platform enables users to:
+**InkFlow** is a full-stack blogging application that empowers users to create, manage, and share their articles in a secure and intuitive environment. Built with industry-standard practices, the platform combines a modern frontend with a robust backend API.
 
-✅ Create Blogs
-✅ Edit & Delete Posts
-✅ Read Dynamic Content
-✅ Securely Authenticate Users
-✅ Manage User-Specific Blogs
-✅ Experience a Clean & Responsive Interface
+### ✨ What You Can Do
 
-The application follows industry-standard MERN architecture with RESTful APIs and cloud deployment.
+✅ Create and publish blog posts  
+✅ Edit and delete your articles  
+✅ Securely authenticate with JWT  
+✅ Manage author profiles  
+✅ Track earnings and statistics  
+✅ Admin dashboard for content management  
+✅ Responsive design for all devices
 
-🎯 Key Features
-🔐 Authentication System
-Secure Login & Registration
-JWT-Based Authentication
-Protected Routes
-📝 Blog Management
-Create New Blogs
-Update Existing Blogs
-Delete Blogs
-Dynamic Blog Rendering
-🎨 Modern UI
-Fully Responsive Design
-Professional Layout
-Clean User Experience
-Optimized Components
-⚡ Backend Functionalities
-REST API Architecture
-MongoDB Integration
-Express Middleware Handling
-Secure Environment Variables
-🛠️ Tech Stack
-Technology	Purpose
-React.js	Frontend UI
-Node.js	Backend Runtime
-Express.js	API Framework
-MongoDB	Database
-JWT	Authentication
-Axios	API Requests
-React Router	Navigation
-Vercel	Frontend Deployment
-Render	Backend Deployment
-📂 Folder Structure
-BLOG-APP/
-│
-├── frontend/
-│   ├── public/
+---
+
+## 🎯 Key Features
+
+### 🔐 **Authentication & Security**
+- Secure user registration and login
+- JWT-based authentication
+- Protected routes with token verification
+- Session management
+- Role-based access control (User, Author, Admin)
+
+### 📝 **Blog Management**
+- Create, read, update, and delete articles
+- Rich text editor for blog content
+- Image upload with Cloudinary integration
+- Dynamic content rendering
+- Draft and publish functionality
+
+### 👤 **User Profiles**
+- User profile customization
+- Author dashboard with statistics
+- Earnings tracking for contributors
+- Author-specific article management
+
+### 🎨 **Modern User Interface**
+- Fully responsive design (mobile, tablet, desktop)
+- Professional and clean layout
+- Smooth animations and transitions
+- Optimized component architecture
+- Intuitive navigation
+
+### 💼 **Admin Dashboard**
+- Content moderation capabilities
+- User management
+- Statistics and analytics
+- System monitoring
+
+---
+
+## 🛠️ Tech Stack
+
+### **Frontend**
+| Technology | Purpose |
+|-----------|---------|
+| **React.js** | UI framework and component management |
+| **Vite** | Build tool and development server |
+| **CSS/Responsive Design** | Styling and layout |
+| **Axios** | HTTP client for API calls |
+
+### **Backend**
+| Technology | Purpose |
+|-----------|---------|
+| **Node.js** | JavaScript runtime |
+| **Express.js** | REST API framework |
+| **MongoDB** | NoSQL database |
+| **JWT** | Authentication and authorization |
+| **Cloudinary** | Image hosting and management |
+| **Multer** | File upload handling |
+
+### **Deployment**
+| Platform | Purpose |
+|----------|---------|
+| **Vercel** | Frontend deployment |
+| **Backend Server** | API hosting |
+
+---
+
+## 📂 Project Structure
+
+```
+Blog_App-fullstack/
+├── frontend/                    # React + Vite frontend
 │   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── context/
-│   │   ├── services/
-│   │   └── App.jsx
-│   │
+│   │   ├── components/         # React components
+│   │   ├── assets/             # Images and media
+│   │   ├── config/             # API configuration
+│   │   ├── store/              # State management
+│   │   ├── styles/             # Global styles
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── vite.config.js
 │   └── package.json
 │
-├── backend/
-│   ├── controllers/
-│   ├── routes/
-│   ├── middleware/
-│   ├── models/
-│   ├── config/
-│   └── server.js
+├── backend/                     # Node.js + Express backend
+│   ├── APIs/                    # Route handlers
+│   │   ├── AdminApi.js
+│   │   ├── AuthorApi.js
+│   │   ├── CommonApi.js
+│   │   └── UserApi.js
+│   ├── Models/                  # MongoDB schemas
+│   │   ├── ArticleModel.js
+│   │   └── UserModel.js
+│   ├── middlewares/             # Express middlewares
+│   │   ├── verifyToken.js
+│   │   ├── checkAuthor.js
+│   │   └── uploadFile.js
+│   ├── services/                # Business logic
+│   │   └── authService.js
+│   ├── config/                  # Configuration files
+│   │   ├── cloudinary.js
+│   │   ├── cloudinaryUpload.js
+│   │   └── multer.js
+│   ├── server.js                # Entry point
+│   └── package.json
 │
-├── .gitignore
 ├── README.md
-└── package.json
-⚙️ Installation Guide
-1️⃣ Clone the Repository
-git clone https://github.com/your-username/your-repository-name.git
-2️⃣ Navigate into the Project
-cd BLOG-APP
-3️⃣ Install Frontend Dependencies
-cd frontend
-npm install
-4️⃣ Install Backend Dependencies
+├── vercel.json                  # Vercel deployment config
+└── .gitignore
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
+- MongoDB Atlas account (or local MongoDB)
+- Cloudinary account (for image hosting)
+
+### Installation
+
+#### 1. Clone the Repository
+```bash
+git clone https://github.com/vineelprince/capstone-blog-app.git
+cd Blog_App-fullstack
+```
+
+#### 2. Backend Setup
+```bash
 cd backend
 npm install
-5️⃣ Setup Environment Variables
+```
 
-Create a .env file inside the backend folder.
-
+Create a `.env` file in the backend directory:
+```env
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret_key
+CLOUDINARY_NAME=your_cloudinary_name
+CLOUDINARY_API_KEY=your_cloudinary_api_key
+CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
-6️⃣ Run the Backend Server
-npm start
+NODE_ENV=development
+```
 
-OR
-
-nodemon server.js
-7️⃣ Run the Frontend
-cd frontend
-npm run dev
-🚀 Deployment Guide
-Frontend Deployment — Vercel
-Step 1:
-
-Push your project to GitHub.
-
-Step 2:
-
-Open:
-Vercel Official Website
-
-Step 3:
-Import Repository
-Select Frontend Folder
-Add Environment Variables
-Deploy
-Backend Deployment — Render
-Step 1:
-
-Open:
-Render Official Website
-
-Step 2:
-Create New Web Service
-Connect GitHub Repository
-Add Build Command
+#### 3. Frontend Setup
+```bash
+cd ../frontend
 npm install
-Add Start Command
-node server.js
-Add Environment Variables
-Deploy Backend
-🔥 API Endpoints
-Method	Endpoint	Description
-POST	/register	Register User
-POST	/login	Login User
-GET	/blogs	Fetch Blogs
-POST	/create	Create Blog
-PUT	/update/:id	Update Blog
-DELETE	/delete/:id	Delete Blog
-📸 Project Preview
-🏠 Home Page
+```
 
-Add Screenshot Here
+Create a `.env` file in the frontend directory:
+```env
+VITE_API_URL=http://localhost:5000
+```
 
-🔐 Login Page
+---
 
-Add Screenshot Here
+## ▶️ Running the Application
 
-✍️ Create Blog Page
-
-Add Screenshot Here
-
-📖 Blog Details Page
-
-Add Screenshot Here
-
-👨‍💻 My Contribution
-
-In this Capstone Project, my primary contributions were focused on backend development and API integration.
-
-Responsibilities:
-Developed REST APIs
-Implemented Authentication System
-Integrated MongoDB Database
-Managed Backend Logic
-Connected Frontend & Backend APIs
-Handled Server Deployment
-📈 Future Enhancements
-🌙 Dark Mode
-❤️ Like & Comment System
-🔍 Advanced Search
-🏷️ Blog Categories & Tags
-📱 Mobile Optimization
-🧠 AI-Powered Blog Suggestions
-📊 Admin Dashboard
-🧠 Learning Outcomes
-
-This project helped me strengthen my knowledge in:
-
-Full Stack MERN Development
-API Architecture
-Authentication & Security
-Database Design
-Deployment & Hosting
-Team Collaboration
-Real-World Project Workflow
-🤝 Acknowledgements
-
-Special thanks to:
-
-SUNTEK ATP Program
-Mentors & Reviewers
-Project Team Members
-Open Source Community
-👤 Author
-VINEEL KRISHNA
-
-🎓 B.Tech Information Technology Student
-🚀 Full Stack Developer
-🏛️ President — Python Club, Anurag University
-💡 MSME Funded Project Developer
-
-⭐ Support
-
-If you found this project useful, consider giving it a ⭐ on GitHub.
-
-It motivates developers more than debugging at 2 AM.
-And trust me... that says a lot. 😄
-
-💻 Run Locally
-# Clone Repository
-git clone <repo-link>
-
-# Frontend Setup
-cd frontend
-npm install
-npm run dev
-
-# Backend Setup
+### Backend
+```bash
 cd backend
-npm install
 npm start
-📜 License
+```
+The API will run on `http://localhost:5000`
+
+### Frontend
+```bash
+cd frontend
+npm run dev
+```
+The frontend will run on `http://localhost:5173`
+
+---
+
+## 📡 API Endpoints
+
+### Authentication
+- `POST /api/auth/register` - Register a new user
+- `POST /api/auth/login` - Login user
+- `POST /api/auth/logout` - Logout user
+
+### Articles
+- `GET /api/articles` - Get all articles
+- `GET /api/articles/:id` - Get article by ID
+- `POST /api/articles` - Create new article (Author only)
+- `PUT /api/articles/:id` - Update article (Author only)
+- `DELETE /api/articles/:id` - Delete article (Author only)
+
+### Authors
+- `GET /api/authors` - Get all authors
+- `GET /api/authors/:id` - Get author details
+- `GET /api/authors/:id/articles` - Get author's articles
+
+### Users
+- `GET /api/users/:id` - Get user profile
+- `PUT /api/users/:id` - Update user profile
+- `GET /api/users/:id/earnings` - Get earnings statistics
+
+### Admin
+- `GET /api/admin/stats` - Get dashboard statistics
+- `GET /api/admin/users` - Manage users
+- `GET /api/admin/articles` - Manage articles
+
+---
+
+## 🔑 Environment Variables
+
+### Backend (.env)
+```env
+MONGODB_URI        # MongoDB connection string
+JWT_SECRET         # Secret key for JWT signing
+CLOUDINARY_NAME    # Cloudinary cloud name
+CLOUDINARY_API_KEY # Cloudinary API key
+CLOUDINARY_API_SECRET # Cloudinary API secret
+PORT               # Server port (default: 5000)
+NODE_ENV           # Environment (development/production)
+```
+
+### Frontend (.env)
+```env
+VITE_API_URL       # Backend API base URL
+```
+
+---
+
+## 📦 Deployment
+
+### Frontend (Vercel)
+1. Connect your GitHub repository to Vercel
+2. Set environment variables in Vercel dashboard
+3. Deploy with a single click
+
+### Backend
+Deploy to your preferred hosting platform (Heroku, Railway, AWS, etc.)
+
+---
+
+## 🎯 Future Enhancements
+
+- 🌙 Dark mode support
+- ❤️ Like and comment system
+- 🔍 Advanced search and filters
+- 🏷️ Blog categories and tags
+- 📱 Progressive Web App (PWA) support
+- 🧠 AI-powered blog recommendations
+- 📊 Enhanced admin analytics dashboard
+- 🔔 Email notifications
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## 📚 Learning Outcomes
+
+This project helped strengthen knowledge in:
+
+✔️ Full Stack MERN Development  
+✔️ REST API Architecture  
+✔️ Authentication & Security (JWT)  
+✔️ Database Design (MongoDB)  
+✔️ Deployment & Hosting  
+✔️ Team Collaboration  
+✔️ Real-World Development Workflow
+
+---
+
+## 👨‍💻 My Contribution
+
+**Primary Focus:** Backend Development & API Integration
+
+### Responsibilities
+- Developed REST APIs for all core features
+- Implemented JWT-based authentication system
+- Integrated MongoDB database and data models
+- Built middleware for security and file uploads
+- Managed frontend-backend API integration
+- Configured server deployment
+
+---
+
+## 🙏 Acknowledgments
+
+- **SUNTEK ATP Program** for the opportunity
+- **Mentors & Reviewers** for guidance and feedback
+- **Project Team Members** for collaboration
+- **Open Source Community** for amazing libraries and tools
+
+---
+
+## 👤 Author
+
+**Vineel Krishna**
+
+- 🎓 B.Tech Information Technology Student
+- 🚀 Full Stack MERN Developer
+- 🏛️ President — Python Club, Anurag University
+- 💡 MSME Funded Project Developer
+
+GitHub: [@vineelprince](https://github.com/vineelprince)
+
+---
+
+## 📜 License
 
 This project is developed for educational and learning purposes.
+
+---
+
+## ⭐ Support
+
+If you found this project useful, please consider giving it a ⭐ on GitHub. Your support motivates us to create better projects!
+
+> "Good projects teach coding. Great projects teach problem solving." 🚀
+
+---
+
+<div align="center">
+
+**Made with ❤️ by Vineel Krishna**
+
+</div>
