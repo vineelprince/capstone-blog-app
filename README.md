@@ -6,7 +6,7 @@ A modern, responsive, and scalable blogging platform built with the **MERN Stack
 
 **Capstone Project under SUNTEK ATP Program**
 
-[Live Demo](#) | [GitHub Repository](#) | [API Documentation](#)
+[Live Demo](https://capstone-blog-app-frontend-deploy.vercel.app/) | [GitHub Repository](#)
 
 </div>
 
