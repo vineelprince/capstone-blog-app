@@ -1,4 +1,4 @@
-### Blog App Backend
+# 🚀 Blog App Backend
 
 Backend service for the Full Stack Blog Application built using Node.js, Express.js, MongoDB, JWT Authentication, and Cloudinary.
 
@@ -15,7 +15,7 @@ This backend powers:
 
 ---
 
-# Backend Tech Stack
+# 🛠️ Backend Tech Stack
 
 | Technology    | Usage                          |
 | ------------- | ------------------------------ |
@@ -33,7 +33,7 @@ This backend powers:
 
 ---
 
-# Backend Folder Structure
+# 📁 Backend Folder Structure
 
 ```bash
 backend/
@@ -70,7 +70,7 @@ backend/
 
 ---
 
-# Project Architecture
+# 🧠 Project Architecture
 
 ```bash
 Client Request
@@ -90,7 +90,7 @@ Response Sent Back
 
 ---
 
-# Backend Features
+# ✨ Backend Features
 
 ## Authentication System
 
@@ -136,7 +136,7 @@ The application supports 3 user roles:
 
 ---
 
-# Package.json Dependencies
+# 📦 Package.json Dependencies
 
 The backend uses the following packages:
 
@@ -268,7 +268,7 @@ npm install cookie-parser
 
 ---
 
-# Database Models
+# 🗄️ Database Models
 
 # 1. User Model
 
@@ -394,7 +394,7 @@ Allows ratings only between 1 and 5.
 
 ---
 
-# Authentication Flow
+# 🔐 Authentication Flow
 
 ```bash
 User Login/Register
@@ -466,7 +466,7 @@ if (!token && req.cookies?.token) {
 
 ---
 
-# APIs Used
+# 🌐 APIs Used
 
 # User APIs
 
@@ -534,7 +534,7 @@ Handles:
 
 ---
 
-# Cloudinary Integration
+# ☁️ Cloudinary Integration
 
 Files:
 
@@ -567,7 +567,7 @@ Used for:
 
 ---
 
-# Error Handling System
+# ⚠️ Error Handling System
 
 The backend contains centralized error handling.
 
@@ -610,7 +610,7 @@ This enables secure frontend-backend communication.
 
 ---
 
-# Installation Guide
+# ⚙️ Installation Guide
 
 # 1. Clone Repository
 
@@ -699,7 +699,7 @@ JSON Response
 
 ---
 
-# Security Features
+# 🛡️ Security Features
 
 * Password Hashing
 * JWT Authentication
@@ -711,7 +711,7 @@ JSON Response
 
 ---
 
-# Backend Deployment
+# 🚀 Backend Deployment
 
 Recommended Platforms:
 
@@ -739,7 +739,7 @@ npm start
 
 ---
 
-# Common Errors & Fixes
+# 🧩 Common Errors & Fixes
 
 # MongoDB Connection Failed
 
@@ -784,7 +784,7 @@ npm start
 
 ---
 
-# Future Improvements
+# 🔮 Future Improvements
 
 * Refresh Token Authentication
 * Redis Caching
@@ -798,18 +798,14 @@ npm start
 
 ---
 
-# Developed By
+# 👨‍💻 Developed By
 
 Vineel Krishna
 
 B.Tech Information Technology
 
-President – Python Club, Anurag University
-
-MSME Funded Project Developer
-
 ---
 
-# License
+# 📜 License
 
 This project is developed for educational and learning purposes.
