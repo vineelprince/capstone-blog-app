@@ -610,9 +610,4 @@ Your support motivates future development and open-source contributions.
 ---
 
 <div align="center">
-
-### “Good projects teach coding. Great projects teach problem solving.”
-
-### Built with passion by Vineel Krishna
-
 </div>
