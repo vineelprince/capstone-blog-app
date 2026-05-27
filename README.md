@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚀 InkFlow — Full Stack MERN Blogging Platform
+# <img src="https://img.icons8.com/fluency/48/blog.png" width="35"/> InkFlow — Full Stack MERN Blogging Platform
 
 ### A modern, responsive, scalable, and production-ready blogging platform built using the **MERN Stack**
 
@@ -14,44 +14,44 @@
 <br/>
 <br/>
 
-### 🎓 Capstone Project under SUNTEK ATP Program
+### Capstone Project under SUNTEK ATP Program
 
-[🌐 Live Demo](https://capstone-blog-app-frontend-deploy.vercel.app/) • [📂 GitHub Repository](#)
+[Live Demo](https://capstone-blog-app-frontend-deploy.vercel.app/) • [GitHub Repository](#)
 
 </div>
 
 ---
 
-# 📌 Project Overview
+# <img src="https://img.icons8.com/fluency/24/info.png"/> Project Overview
 
 **InkFlow** is a full-stack blogging ecosystem that enables users to create, manage, publish, and interact with articles in a secure and scalable environment.
 
 The platform combines:
 
-- ⚡ High-performance React frontend
-- 🔐 Secure JWT authentication
-- ☁️ Cloudinary cloud media storage
-- 🗄️ MongoDB database architecture
-- 🚀 RESTful backend APIs
-- 📱 Fully responsive design
-- 🧠 Scalable modular backend structure
+- High-performance React frontend
+- Secure JWT authentication
+- Cloudinary cloud media storage
+- MongoDB database architecture
+- RESTful backend APIs
+- Fully responsive design
+- Scalable modular backend structure
 
 ---
 
-# 🎯 Core Objectives
+# <img src="https://img.icons8.com/fluency/24/goal.png"/> Core Objectives
 
-✅ Build scalable MERN architecture  
-✅ Implement secure authentication workflows  
-✅ Design modern responsive UI  
-✅ Support multi-role authorization  
-✅ Manage dynamic content efficiently  
-✅ Simulate real-world production workflows  
+- Build scalable MERN architecture  
+- Implement secure authentication workflows  
+- Design modern responsive UI  
+- Support multi-role authorization  
+- Manage dynamic content efficiently  
+- Simulate real-world production workflows  
 
 ---
 
-# ✨ Key Features
+# <img src="https://img.icons8.com/fluency/24/star.png"/> Key Features
 
-## 🔐 Authentication & Security
+## <img src="https://img.icons8.com/fluency/24/lock.png"/> Authentication & Security
 
 - Secure user registration & login
 - JWT-based authentication
@@ -62,7 +62,7 @@ The platform combines:
 
 ---
 
-## 📝 Blog Management
+## <img src="https://img.icons8.com/fluency/24/edit.png"/> Blog Management
 
 - Create, edit & delete articles
 - Dynamic blog rendering
@@ -72,7 +72,7 @@ The platform combines:
 
 ---
 
-## 👤 User Features
+## <img src="https://img.icons8.com/fluency/24/user.png"/> User Features
 
 - User profile management
 - Personalized dashboard
@@ -81,7 +81,7 @@ The platform combines:
 
 ---
 
-## 💼 Admin Features
+## <img src="https://img.icons8.com/fluency/24/admin-settings-male.png"/> Admin Features
 
 - User moderation
 - Content monitoring
@@ -90,7 +90,7 @@ The platform combines:
 
 ---
 
-## 🎨 UI/UX Features
+## <img src="https://img.icons8.com/fluency/24/design.png"/> UI/UX Features
 
 - Fully responsive layout
 - Reusable React components
@@ -100,9 +100,9 @@ The platform combines:
 
 ---
 
-# 🛠️ Complete Tech Stack
+# <img src="https://img.icons8.com/fluency/24/maintenance.png"/> Complete Tech Stack
 
-## 🎨 Frontend
+## <img src="https://img.icons8.com/fluency/24/source-code.png"/> Frontend
 
 | Technology | Purpose |
 |---|---|
@@ -116,7 +116,7 @@ The platform combines:
 
 ---
 
-## ⚙️ Backend
+## <img src="https://img.icons8.com/fluency/24/server.png"/> Backend
 
 | Technology | Purpose |
 |---|---|
@@ -131,7 +131,7 @@ The platform combines:
 
 ---
 
-## ☁️ Deployment
+## <img src="https://img.icons8.com/fluency/24/cloud.png"/> Deployment
 
 | Platform | Purpose |
 |---|---|
@@ -142,7 +142,7 @@ The platform combines:
 
 ---
 
-# 🧠 System Architecture
+# <img src="https://img.icons8.com/fluency/24/flow-chart.png"/> System Architecture
 
 ```text
                 ┌──────────────────┐
@@ -175,7 +175,7 @@ The platform combines:
 
 ---
 
-# 🗄️ Database Entity Relationship Diagram (ER Diagram)
+# <img src="https://img.icons8.com/fluency/24/database.png"/> Database ER Diagram
 
 ```text
 ┌────────────────────┐
@@ -218,7 +218,7 @@ The platform combines:
 
 ---
 
-# 🔄 Authentication Workflow
+# <img src="https://img.icons8.com/fluency/24/key-security.png"/> Authentication Workflow
 
 ```text
         User Login/Register
@@ -247,7 +247,7 @@ The platform combines:
 
 ---
 
-# ☁️ Image Upload Workflow
+# <img src="https://img.icons8.com/fluency/24/image.png"/> Image Upload Workflow
 
 ```text
  User Uploads Image
@@ -273,7 +273,7 @@ The platform combines:
 
 ---
 
-# 🔐 Role-Based Access Control
+# <img src="https://img.icons8.com/fluency/24/security-checked.png"/> Role-Based Access Control
 
 | Role | Permissions |
 |---|---|
@@ -283,7 +283,7 @@ The platform combines:
 
 ---
 
-# 📂 Complete Project Structure
+# <img src="https://img.icons8.com/fluency/24/folder-invoices.png"/> Complete Project Structure
 
 ```bash
 Blog_App-fullstack/
@@ -341,9 +341,9 @@ Blog_App-fullstack/
 
 ---
 
-# 🚀 Getting Started
+# <img src="https://img.icons8.com/fluency/24/settings.png"/> Getting Started
 
-## 📋 Prerequisites
+## Prerequisites
 
 Before running the project locally, ensure you have:
 
@@ -354,9 +354,9 @@ Before running the project locally, ensure you have:
 
 ---
 
-# ⚙️ Installation Guide
+# <img src="https://img.icons8.com/fluency/24/installing-updates.png"/> Installation Guide
 
-## 1️⃣ Clone Repository
+## Clone Repository
 
 ```bash
 git clone https://github.com/vineelprince/capstone-blog-app.git
@@ -365,7 +365,7 @@ cd Blog_App-fullstack
 
 ---
 
-## 2️⃣ Backend Setup
+## Backend Setup
 
 ```bash
 cd backend
@@ -386,7 +386,7 @@ NODE_ENV=development
 
 ---
 
-## 3️⃣ Frontend Setup
+## Frontend Setup
 
 ```bash
 cd ../frontend
@@ -401,9 +401,9 @@ VITE_API_URL=http://localhost:5000
 
 ---
 
-# ▶️ Running The Project
+# <img src="https://img.icons8.com/fluency/24/play.png"/> Running The Project
 
-## 🚀 Backend
+## Backend
 
 ```bash
 cd backend
@@ -418,7 +418,7 @@ http://localhost:5000
 
 ---
 
-## 🎨 Frontend
+## Frontend
 
 ```bash
 cd frontend
@@ -433,9 +433,9 @@ http://localhost:5173
 
 ---
 
-# 📡 API Modules
+# <img src="https://img.icons8.com/fluency/24/api.png"/> API Modules
 
-## 👤 User APIs
+## User APIs
 
 Handles:
 
@@ -446,7 +446,7 @@ Handles:
 
 ---
 
-## ✍️ Author APIs
+## Author APIs
 
 Handles:
 
@@ -457,7 +457,7 @@ Handles:
 
 ---
 
-## 🛡️ Admin APIs
+## Admin APIs
 
 Handles:
 
@@ -468,7 +468,7 @@ Handles:
 
 ---
 
-## 🌐 Common APIs
+## Common APIs
 
 Handles:
 
@@ -478,7 +478,7 @@ Handles:
 
 ---
 
-# 🚀 Deployment Architecture
+# <img src="https://img.icons8.com/fluency/24/cloud-network.png"/> Deployment Architecture
 
 ```text
 Frontend (Vercel)
@@ -495,7 +495,7 @@ Cloudinary Media Storage
 
 ---
 
-# 🔑 Environment Variables
+# <img src="https://img.icons8.com/fluency/24/variables.png"/> Environment Variables
 
 ## Backend (.env)
 
@@ -519,7 +519,7 @@ VITE_API_URL
 
 ---
 
-# 🛡️ Security Features
+# <img src="https://img.icons8.com/fluency/24/privacy.png"/> Security Features
 
 - JWT Authentication
 - Role-Based Authorization
@@ -532,49 +532,49 @@ VITE_API_URL
 
 ---
 
-# 📈 Scalability Features
+# <img src="https://img.icons8.com/fluency/24/combo-chart.png"/> Scalability Features
 
 The current architecture can scale into:
 
-- 📰 Medium-like Publishing Platform
-- 🌍 Community Blogging Platform
-- 🧠 AI Content Platform
-- 💬 Social Publishing Ecosystem
-- 📊 Analytics Driven CMS
+- Medium-like Publishing Platform
+- Community Blogging Platform
+- AI Content Platform
+- Social Publishing Ecosystem
+- Analytics Driven CMS
 
 ---
 
-# 🔮 Future Enhancements
+# <img src="https://img.icons8.com/fluency/24/future.png"/> Future Enhancements
 
-- 🌙 Dark Mode
-- ❤️ Like & Save System
-- 💬 Real-time Comments
-- 🔍 Advanced Search
-- 🏷️ Categories & Tags
-- 📱 Progressive Web App
-- 🧠 AI Blog Recommendations
-- 📊 Advanced Analytics
-- 🔔 Notifications System
-- 🌐 Multi-language Support
+- Dark Mode
+- Like & Save System
+- Real-time Comments
+- Advanced Search
+- Categories & Tags
+- Progressive Web App
+- AI Blog Recommendations
+- Advanced Analytics
+- Notifications System
+- Multi-language Support
 
 ---
 
-# 📚 Learning Outcomes
+# <img src="https://img.icons8.com/fluency/24/learning.png"/> Learning Outcomes
 
 This project strengthened practical knowledge in:
 
-✅ MERN Stack Development  
-✅ REST API Architecture  
-✅ Authentication & Security  
-✅ MongoDB Database Design  
-✅ State Management  
-✅ Deployment & Hosting  
-✅ Cloud Integrations  
-✅ Real-World Development Workflow  
+- MERN Stack Development  
+- REST API Architecture  
+- Authentication & Security  
+- MongoDB Database Design  
+- State Management  
+- Deployment & Hosting  
+- Cloud Integrations  
+- Real-World Development Workflow  
 
 ---
 
-# 🙏 Acknowledgments
+# <img src="https://img.icons8.com/fluency/24/handshake.png"/> Acknowledgments
 
 - SUNTEK ATP Program
 - Mentors & Reviewers
@@ -585,34 +585,34 @@ This project strengthened practical knowledge in:
 
 ---
 
-# 👨‍💻 Author
+# <img src="https://img.icons8.com/fluency/24/developer.png"/> Author
 
 ## Vineel Krishna
 
-🎓 B.Tech Information Technology Student  
+B.Tech Information Technology Student  
 
 GitHub: [@vineelprince](https://github.com/vineelprince)
 
 ---
 
-# 📜 License
+# <img src="https://img.icons8.com/fluency/24/document.png"/> License
 
 This project is developed for educational and learning purposes.
 
 ---
 
-# ⭐ Support
+# <img src="https://img.icons8.com/fluency/24/star.png"/> Support
 
 If you found this project useful, give it a ⭐ on GitHub.
 
-Your support motivates future development and open-source contributions 🚀
+Your support motivates future development and open-source contributions.
 
 ---
 
 <div align="center">
 
-### 💡 “Good projects teach coding. Great projects teach problem solving.”
+### “Good projects teach coding. Great projects teach problem solving.”
 
-### ❤️ Made with passion by Vineel Krishna
+### Built with passion by Vineel Krishna
 
 </div>
